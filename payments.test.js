@@ -21,10 +21,11 @@ describe('payments.js tests, with set-up and tear-down', function () {
 
         let curTdList = document.querySelectorAll('#paymentTable tbody tr td');
 
-        expect(curTdList.length).toEqual(3);
+        expect(curTdList.length).toEqual(4);
         expect(curTdList[0].innerText).toEqual('$350');
         expect(curTdList[1].innerText).toEqual('$70');
         expect(curTdList[2].innerText).toEqual('20%');
+        expect(curTdList[3].innerText).toEqual('X');
     });
 
     it('should not add a new payment on submitPaymentInfo() with an empty input', function () {

@@ -57,6 +57,7 @@ function appendPaymentTable(curPayment) {
   appendTd(newTr, curPayment.tipPercent + '%');
 
   paymentTbody.append(newTr);
+  appendDeleteBtn(newTr, 'payment');
 }
 
 // Create table row element and pass to appendTd with calculated sum of all payment
